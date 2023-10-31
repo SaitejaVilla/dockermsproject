@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: srikan8/movies:latest
+    image: tejunaidu/movies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: srikan8/train:latest
+    image: tejunaidu/train:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: srikan8/dth:latest
+    image: tejunaidu/dth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: srikan8/recharge:latest
+    image: tejunaidu/recharge:latest
     ports:
       - "84:80"
     deploy:
